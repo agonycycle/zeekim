@@ -5,7 +5,7 @@ from django.template import RequestContext
 import datetime
 
 def test(request):
-	return HttpResponse("zeekim")
+	return render(request, 'readme.html',{})
 
 def main(request):
     return render(request, 'main.html', {})
