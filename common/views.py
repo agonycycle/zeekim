@@ -4,5 +4,8 @@ from django.shortcuts import render_to_response, render, redirect
 from django.template import RequestContext
 import datetime
 
-def main(request):
+def test(request):
 	return HttpResponse("zeekim")
+
+def main(request):
+    return render(request, 'main.html', {})

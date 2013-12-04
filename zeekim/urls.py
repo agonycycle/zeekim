@@ -7,6 +7,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
 						url(r'^$',main, name='main'),
+                        url(r'^test/$',test, name='test')
     # Examples:
     # url(r'^$', 'zeekim.views.home', name='home'),
     # url(r'^zeekim/', include('zeekim.foo.urls')),
